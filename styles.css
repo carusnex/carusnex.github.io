@@ -1,28 +1,42 @@
-header {
-    position: relative;
-    text-align: center;
-}
 body {
     background-color: #15282f;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    text-align: center;
 }
-img   {
-    max-width: 100%;
-    height: auto;
+header {
+    background-image: url(./city2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    box-shadow: 0 0 3px #000;
 }
-.flex-container  {
+.navigation {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+
 }
-.centered-top   {
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.nav-item {
+    list-style: none;
+}
+.nav-item a {
+    color: #a4c9d6;
+    text-decoration: none;
+    transition: .8s ease;
+}
+.nav-item a:hover {
+    color: #3a88a5;
+}
+.nav-item:first-child {
+    padding-left: 25%;
+}
+.nav-item:last-child {
+    padding-right: 25%;
 }
 .flex-grid {
     display: grid;
-    
 }
