@@ -1,0 +1,215 @@
+body {
+    background-color:#EdE0D4;
+    font-family: "Oswald", Tahoma, Verdana, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    text-align: center;
+    color: #42210b
+}
+header {
+    background-color: #B08968;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    font-size: 1.5vw;
+    padding: 1em;
+    box-shadow: 0 0 3px #000;
+}
+.image2 {
+    display: none;
+}
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #B08968;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: #42210b;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+  }
+  .logo {
+    padding: 0 0;
+    margin: 0 0;
+  }
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #B08968;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #B08968;
+    color: #42210b;
+  }
+  
+nav {
+    display: none;
+}  
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.main-text {
+    width: 50%;
+    margin: 5em 5em 5em 20em;
+    text-align: left;
+}
+.side-info {
+    margin: 5em 20em 5em 0em;
+    padding: 1em;
+    text-align: left;
+    border-style: outset;
+    border-color: #ddb892;
+    border-width: 2px;
+}  
+.contact-form {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 20px;
+}
+.contact-form label {
+    margin: 5px 10px 5px 0;
+    color: #42210b;
+}
+.contact-form input {
+    vertical-align: middle;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #42210b;
+    border: 1px solid #ddd;
+    color: white;
+}
+.contact-form button:hover {
+    background-color: #834620;
+    transition: .8s ease;
+}
+.fa-instagram, .fa-square-facebook, .fa-square-twitter{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    transition: .8s ease;
+    color: #42210b;
+}
+.fa-instagram:hover, .fa-square-facebook:hover, .fa-square-twitter:hover {
+    color:#834620;
+}
+.bottom-color {
+    background-color: #B08968;
+    padding: 2em 5em;
+}  
+footer {
+    background-color: #540B0E;
+    padding: 5em;
+    font-size: 1vw;
+    font-weight: bold;
+    letter-spacing: .15vw;
+    color: #1b0b02;
+}
+@media only screen and (min-width: 992px) {
+    header  {
+        position: static;
+    }
+    
+    .image1{
+        display: none;
+      }
+    .image2{
+        display: inline-block;
+      }
+    .topnav {
+        display: none;
+    }  
+    nav {
+        display: block;
+    }    
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    .nav-item {
+        list-style: none;
+        padding-right: 1vw;
+    }
+    .nav-item a {
+        color: #42210b;
+        text-decoration: none;
+        transition: .8s ease;
+    }
+    .nav-item a:hover {
+        color: #834620;
+    }
+    .nav-item:first-child {
+        margin-left: 25%;
+        border-bottom-style: double;
+        border-right-style: double;
+    }
+    .nav-item:nth-child(2) {
+        border-bottom-style: double;
+        border-right-style: double;    
+    }
+    .nav-item:nth-child(3) {
+        border-bottom-style: double;
+        border-right-style: double;
+    }
+    .nav-item:last-child {
+        margin-right: 25%;
+        border-bottom-style: double;
+        border-right-style: double;
+    }
+}    
+
+   @media only screen and (min-width: 992px) {    
+    .contact-form {
+        flex-direction: row;
+        align-items: center;
+    }
+    .contact-form label {
+        margin: 5px 10px 5px 0;
+        color: #42210b;
+    }
+    .contact-form input {
+        margin: 5px 10px 5px 0;
+    }
+    .contact-form button {
+        padding: 10px 20px;
+        background-color: #42210b;
+        border: 1px solid #ddd;
+        color: white;
+    }
+    .contact-form button:hover {
+        background-color: #834620;
+        transition: .8s ease;
+    }
+    }    

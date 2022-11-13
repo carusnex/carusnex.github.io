@@ -120,7 +120,9 @@ footer {
     letter-spacing: .15vw;
     color: #1b0b02;
 }
+@media only screen and (min-width: 768px) {
 
+}
 @media (max-width: 800px) {
     .contact-form input {
       margin: 10px 0;

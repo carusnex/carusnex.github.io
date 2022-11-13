@@ -5,19 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metropolis Coffee - Coffee for the City</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
     <script src="https://kit.fontawesome.com/e6650569de.js" crossorigin="anonymous"></script>
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        }
+    </script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&effect=shadow-multiple">
 </head>
 <body>
     <header>
-        <ul class="navigation">
-            <li class="nav-item"><a href="#">Home</a></li>
-            <li class="nav-item"><a href="#">Location</a></li>
-            <li class="nav-item"><a href="index.html"><img src="cupa2.png" alt="Coffee for the City" height="200" width="200"></a></li>
-            <li class="nav-item"><a href="#">Menu</a></li>
-            <li class="nav-item"><a href="#">Contact</a></li>
-        </ul>          
+        <a href="index.html"><img src="cupa1.png" class="image2" alt="Coffee for the City" height="200" width="200"></a>
+        
+        <div class="topnav">
+            <a href="index.html"><img src="cupa2.png" class="image1" alt="Coffee for the City" height="100" width="100"></a>
+            <div id="myLinks">
+                <a href="#">Home</a>
+                <a href="#">Location</a>
+                <a href="#">Menu</a>
+                <a href="#">Contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            </a>
+        </div>
+        <nav class="nav">
+            <ul class="navigation">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">Location</a></li> 
+                <li class="nav-item"><a href="#">Menu</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>              
     </header>
 
     <main>
@@ -82,7 +109,7 @@
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Enter email..">
-            
+
             <label for="subject">Subject</label>
             <input type=text id="subject" name="subject" placeholder="Subject..">
 
