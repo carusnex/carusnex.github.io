@@ -34,20 +34,20 @@ header {
 .nav-item:first-child {
     margin-left: 25%;
     border-bottom-style: double;
-    border-right-style:double;
+    border-right-style: double;
 }
 .nav-item:nth-child(2) {
     border-bottom-style: double;
-    border-right-style:double;    
+    border-right-style: double;    
 }
 .nav-item:nth-child(4) {
     border-bottom-style: double;
-    border-right-style:double;
+    border-right-style: double;
 }
 .nav-item:last-child {
     margin-right: 25%;
     border-bottom-style: double;
-    border-right-style:double;
+    border-right-style: double;
 }
 main {
     display: flex;
