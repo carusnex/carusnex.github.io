@@ -110,7 +110,7 @@ main {
     transition: .8s ease;
 }
 .fa-instagram, .fa-square-facebook, .fa-square-twitter{
-    padding: 10px;
+    padding: 5px;
     font-size: 30px;
     width: 50px;
     text-align: center;
@@ -201,7 +201,13 @@ footer {
         margin-right: 25%;
         border-bottom-style: double;
         border-right-style: double;
-    }  
+    } 
+    .coffee1 {
+        display: none;
+    }
+    .coffee2 {
+        display: block;
+    } 
     .contact-form {
         flex-direction: row;
         align-items: center;
@@ -222,5 +228,8 @@ footer {
     .contact-form button:hover {
         background-color: #834620;
         transition: .8s ease;
+    }
+    footer {
+        font-size: 1vw
     }
 }
